@@ -4,19 +4,11 @@ var router = require('react-router');
 var Link = router.Link;
 
 import Options from '../components/options.jsx'
-//import About from '../components/about.jsx'
 import Portfolio from '../components/portfolio.jsx'
 import Numbers from '../components/numbers.jsx'
 import Team from '../components/team.jsx'
 import Slider from '../components/slider.jsx'
-// var Counters = require('../components/counters.jsx');
-// var Feedback = require('../components/feedback.jsx');
-// var Contact = require('../components/contact.jsx');
-// var Options = require('../components/options.jsx');
-// var News = require('../components/news.jsx');
-// var Team = require('../components/team.jsx');
-
-
+import News from '../components/news.jsx'
 
 class Home extends React.Component {
    render() {
@@ -51,6 +43,7 @@ class Home extends React.Component {
                <Portfolio></Portfolio>
                <Numbers></Numbers>
                <Team></Team>
+               <News></News>
             </div>
 
       )}

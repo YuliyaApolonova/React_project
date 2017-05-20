@@ -17,7 +17,27 @@ import AppDesign from './components/services/appDesign.jsx'
 import Support from './components/services/support.jsx'
 import Marketing from './components/services/marketing.jsx'
 import Seo from './components/services/seo.jsx'
-import History from './components/aboutCompany/history.jsx'
+// import History from './components/aboutCompany/history.jsx'
+
+class NewId extends React.Component{
+   constructor(props) {
+      super(props)
+      //console.log(this.props);
+   }
+   render() {
+      // доступ к query параметрам
+      let location = this.props.location
+      let date = location.query.date;
+      let text = location.query.text;
+      return (
+            <div className="container newIdContainer">
+               <h3>New id: {this.props.params.newID}</h3>
+               <p>{text}</p>
+               <h4>{date}</h4>
+               <Link to="/">Back</Link>
+            </div>
+      )}
+}
 
 class App extends React.Component{
 
@@ -67,10 +87,7 @@ ReactDOM.render(<Router history={hashHistory}>
          <Route key={5} path="/service/Marketing" component={Marketing} />
          <Route key={6} path="/service/Seo" component={Seo} />
       </Route>
-      <Route key={7} path="/about" component={Home}>
-         <IndexRoute component={History}></IndexRoute>
-         <Route key={8} path="/about/History" component={History}/>
-      </Route>
+      <Route key={7} path="new/:newID" component={NewId} />
    </Route>
 
 </Router>, document.getElementById('root'));

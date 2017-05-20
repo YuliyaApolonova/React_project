@@ -1,30 +1,36 @@
 import React from 'react'
+import { Carousel } from 'react-bootstrap'
 
 class Slider extends React.Component{
    render(){
       return(
             <div id="slider">
-               <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                  <div className="carousel-inner" role="listbox">
-                     <div className="carousel-item active">
-                        <img className="d-block img-fluid" src="src/images/slide1.jpg" alt="First slide"/>
-                     </div>
-                     <div className="carousel-item">
-                        <img className="d-block img-fluid" src="src/images/slide2.jpg" alt="Second slide"/>
-                     </div>
-                     <div className="carousel-item">
-                        <img className="d-block img-fluid" src="src/images/slide3.jpg" alt="Third slide"/>
-                     </div>
-                  </div>
-                  <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span className="sr-only">Previous</span>
-                  </a>
-                  <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span className="sr-only">Next</span>
-                  </a>
-               </div>
+            <Carousel interval="3000">
+               <Carousel.Item className="carousel">
+                  <img width={1600} height={500} alt="900x500" src="src/images/slide1.jpg"/>
+                  <Carousel.Caption>
+                     <h3>The HAM is a psd template</h3>
+                     <h2>We are creative</h2>
+                     <p>Nam varius accumsan elementim eliquam</p>
+                  </Carousel.Caption>
+               </Carousel.Item>
+               <Carousel.Item className="carousel">
+                  <img width={1600} height={500} alt="900x500" src="src/images/slide2.jpg"/>
+                  <Carousel.Caption>
+                     <h3>The HAM is a psd template</h3>
+                     <h2>We are creative</h2>
+                     <p>Nam varius accumsan elementim eliquam</p>
+                  </Carousel.Caption>
+               </Carousel.Item>
+               <Carousel.Item className="carousel">
+                  <img width={1600} height={500} alt="900x500" src="src/images/slide3.jpg"/>
+                  <Carousel.Caption>
+                     <h3>The HAM is a psd template</h3>
+                     <h2>We are creative</h2>
+                     <p>Nam varius accumsan elementim eliquam</p>
+                  </Carousel.Caption>
+               </Carousel.Item>
+            </Carousel>
             </div>
       )
    }

@@ -69,11 +69,32 @@
     }
 
 }
-
+#slider{
+    margin-top:40px;
+}
+.carousel{
+    position: relative;
+}
+.carousel h2{
+    color: white;
+    font: 400 40px Raleway;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel h3{
+    color: #00e1ff;
+    font: 300 20px Raleway;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel-caption{
+    position: absolute;
+    left:0px;
+    top:100px;
+}
 #options
 {
     width:100%;
-    margin-top: 40px;
 }
 #options-before{
     height:10px;
