@@ -1,0 +1,404 @@
+#header{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    position:fixed;
+    background-color: #44433E;
+    font-size: 10px;
+    top:0;
+    z-index:1000;
+}
+#header-logotype{
+    align:center;
+    margin-left: 50%;
+    height:40px;
+    /*margin-top: 10px;*/
+}
+.header-link
+{
+    border: none;
+    background-color: #44433E;
+    width:100%;
+    height: 38px;
+    color:white;
+}
+.header-link:active
+{
+    border:none;
+    color: #00e1ff;
+    font: 300 11px Raleway;
+    font-weight: 300;
+}
+.header-link:visited
+{
+    border:none;
+    color: #00e1ff;
+    font: 300 11px Raleway;
+    font-weight: 300;
+}
+.header-link:hover
+{
+    border:none;
+    color: #00e1ff;
+    font: 300 11px Raleway;
+    font-weight: 300;
+    text-decoration: none;
+}
+.nav-content{
+    text-align:center;
+    line-height: 40px;
+}
+@media(max-width: 321px){
+    #header-logotype{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+
+    }
+    .header-link
+    {
+        border: none;
+        background-color: #44433E;
+        width:100%;
+        /*height: 38px;*/
+        font-size:4px;
+    }
+    .header-link:active, header-link:visited, header-link:hover{
+        font-size:3px;
+        text-decoration: none;
+    }
+
+}
+
+#options
+{
+    width:100%;
+    margin-top: 40px;
+}
+#options-before{
+    height:10px;
+
+}
+.options-before-1{
+    background-color: #18cfab;
+    height:10px;
+}
+.options-before-2{
+    background-color: white;
+    height:10px;
+
+}
+#option-item1, #option-item3
+{
+    height: 250px;
+    background-color: #1c2a33;
+    text-align:center;
+    /*line-height: 250px;*/
+
+}
+#option-item2, #option-item4
+{
+    height: 250px;
+    background-color: #18cfab;
+    text-align: center;
+}
+#option-item1, #option-item3 p
+{
+    color: #18cfab;
+    font-size: 2vw;
+    font-weight: 600;
+}
+#option-item2, #option-item4 p
+{
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.item-img
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+
+}
+.item-img img
+{
+
+    width:24%;
+}
+.option-item:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hr1
+{
+    width: 75px;
+    height: 1px;
+    margin: 2px auto;
+    border: none;
+    background-color: #18cfab;
+    position: relative;
+    left: 5px;
+
+
+
+}
+.hr2
+{
+    left: -5px;
+    width: 75px;
+    height: 1px;
+    margin: 2px auto;
+    border: none;
+    background-color: #18cfab;
+    position: relative;
+    right: 5px;
+}
+.caption{
+    color: #4e4e4e;
+    font: 400 36px / 40px Montserrat;
+    text-align: center;
+}
+#services-menu{
+    margin-top: 30px;
+}
+.services-content{
+    margin-top:30px;
+}
+.service-button{
+    border: 1px solid #EBEBEB;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.service-img{
+    width: 100%;
+    height: auto;
+}
+
+#about{
+    height: 500px;
+    background-color: #0A0F15;
+    display: table;
+    width: 100%;
+}
+#about-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about-container{
+    width: 100%;
+    height: 80%;
+}
+#about-photo{
+    background-color: #B3B3B3;
+    height: 100%;
+}
+#about h1{
+    font: 400 36px / 40px Montserrat;
+    text-align: center;
+    color: white;
+}
+.skills-block{
+    height: 30px;
+    background-color: #00e1ff;
+}
+.example-appear {
+    opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+#portfolio{
+    height: auto;
+}
+#portfolio-menu{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.portfolio-button{
+    border: 1px solid #EBEBEB;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.portfolio-button:hover{
+    border-top: 2px solid #18cfab;
+}
+.portfolio-photo-item{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+.portfolio-photo{
+    width: 100%;
+    height: auto;
+}
+.portfolio-photo-hover{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    opacity: 0;
+    text-align: center;
+    height: 100%;
+    width: 92%;
+    background-color:white;
+    line-height:100%;
+}
+.portfolio-photo-hover:hover{
+    opacity: 0.7;
+    background-color:white;
+
+}
+.hoverObjContent{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top:30px;
+}
+.hoverObjContent i{
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18cfab;
+    border-radius: 50%;
+    color: #18cfab;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+}
+.hoverObjContent i:hover{
+    background-color: #18cfab;
+    color: #ffffff;
+}
+.portfolio-photo-caption{
+    color: #18cfab;
+    font-weight: bold;
+}
+#numbers{
+    height:500px;
+    background-color: green;
+    margin-top: 1000px;
+}
+.number-container{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#meet-our-team-container
+{
+    width:100%;
+}
+#meet-our-team
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#meet-our-team h1
+{
+    color: #4e4e4e;
+    font: 400 36px / 40px Montserrat;
+    text-align: center;
+}
+.team-img
+{
+    width:100%;
+    height: 200px;
+    text-align: center;
+}
+.team-img img
+{
+    height: 200px;
+    text-align:center;
+}
+#cont-fluid
+{
+    margin-top: 70px;
+}
+.team-profession
+{
+    background-color: #2e4a5b;
+    margin-bottom: 0;
+}
+.team-p1
+{
+    color: #ffffff;
+    font: 700 16.43px / 40px Montserrat;
+    margin-left: 10px;
+}
+.team-p2
+{
+    color: #18cfab;
+    font: 300 13.35px / 40px Montserrat;
+    margin-left: 10px;
+}
+.networks
+{
+    margin-top:-10px;
+    height: 50px;
+    border-top: 1px solid white;
+}
+.network1, .network2, .network3, .network4
+{
+    width: 25%;
+    background-color: #2e4a5b;
+    height: 50px;
+    float: left;
+    border-right: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.team-profession:hover .team-p2
+{
+    color: black;
+}
+.team-profession:hover
+{
+    background-color: #18cfab;
+}
+.network1:hover, .network2:hover, .network3:hover, .network4:hover
+{
+    background-color: #18cfab;
+}
+.team-img:hover .circle
+{
+    opacity: 1;
+}
+.team-img:hover i
+{
+    opacity:0.7;
+}
+.circle {
+    position: relative;
+    border: 2px solid #18cfab;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -120px auto 0 auto;
+    cursor: pointer;
+    opacity:0;
+}
+.team-img i {
+    color: #18cfab;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 3px;
+    opacity:0;
+}
+
