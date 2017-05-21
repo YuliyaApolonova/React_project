@@ -68,7 +68,7 @@ class Contacts extends React.Component{
                            <hr className="hr1"/>
                               <hr className="hr2"/>
                         </div>
-                        <form className="contacts-form" onSubmit={this.formSubmit}>
+                        <form className="contacts-form" onSubmit={this.formSubmit} action="#" method="post">
                            <p><input type="text" name="name" placeholder="Name" size="45" onInput={this.nameInput}/></p>
                            <p className="errorMessage">{this.state.nameInputErr}</p>
                            <p><input type="text" name="email" placeholder="E-mail" size="45" onInput={this.mailInput}/></p>

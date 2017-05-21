@@ -37,7 +37,7 @@ class Portfolio extends React.Component{
                      <div data-category='wordpress' onClick={(e)=> this.filterPhotos(e)} className="col-lg-2 col-md-2 col-sm-3 col-xs-6 portfolio-button">Wordpress</div>
                   </div>
                </div>
-               <div className="portfolio-photo-container">
+               <div className="container portfolio-photo-container">
                   {this.state.photos.map((photo, index)=>{
                      return(
                            <div key = {index} className="col-lg-3 col-md-3 col-sm-5 col-xs-12 portfolio-photo-item">

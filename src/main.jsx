@@ -1,5 +1,12 @@
 import React from 'react';
 var ReactDOM = require('react-dom');
+var Scroll  = require('react-scroll');
+
+var ScrollLink       = Scroll.Link;
+var ScrollElement    = Scroll.Element;
+var ScrollEvents     = Scroll.Events;
+var scroll     = Scroll.animateScroll;
+var scrollSpy  = Scroll.scrollSpy;
 
 //подключаеем роутинг
 var router = require('react-router');
@@ -24,13 +31,16 @@ class NewId extends React.Component{
       super(props)
       //console.log(this.props);
    }
+   componentDidMount(){
+      scrollSpy.update();
+   }
    render() {
       // доступ к query параметрам
       let location = this.props.location
       let date = location.query.date;
       let text = location.query.text;
       return (
-            <div className="container newIdContainer">
+            <div className="container newId-container">
                <h3>New id: {this.props.params.newID}</h3>
                <p>{text}</p>
                <h4>{date}</h4>
@@ -54,16 +64,16 @@ class App extends React.Component{
                            <div className="container-fluid">
                               <div className="row">
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="home" className="header-link">HOME</Link></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="about" className="header-link" >ABOUT</Link></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="slider"  spy={true} smooth={true} offset={-50} duration={500} className="header-link">HOME</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >ABOUT</ScrollLink></div></div>
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="service" className="header-link" >SERVICE</Link></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="skills" className="header-link" >SKILLS</Link></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="portfolio" className="header-link" >PORTFOLIO</Link></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="service" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >SERVICE</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="feedback" spy={true} smooth={true} offset={-40} duration={500} className="header-link" >FEEDBACK</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="portfolio" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >PORTFOLIO</ScrollLink></div></div>
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="news" className="header-link" >TESTIMONIAL</Link></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="team" className="header-link" >TEAM</Link></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><Link to="contact" className="header-link" >CONTACTS</Link></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="news" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >NEWS</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="team" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >TEAM</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="contacts" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >CONTACTS</ScrollLink></div></div>
                               </div>
                            </div>
                         </div>
@@ -71,6 +81,14 @@ class App extends React.Component{
                   </div>
                </header>
                <div className="homeContainer">{this.props.children}</div>
+               <footer>
+
+                  <div className="container footer-container">
+                     <p className="footer-text">Copyright 2016 <a  href="javascript:void(0)">theHam</a> | All Rights Reserved</p>
+                     <ScrollLink className="footer-btn" to="slider"  spy={true} smooth={true} offset={-50} duration={500}><i className="fa fa-angle-up"></i></ScrollLink>
+                  </div>
+
+               </footer>
             </div>
       )
    }

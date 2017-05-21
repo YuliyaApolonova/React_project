@@ -21,6 +21,7 @@
     width:100%;
     height: 38px;
     color:white;
+    cursor: pointer;
 }
 .header-link:active
 {
@@ -60,14 +61,43 @@
         border: none;
         background-color: #44433E;
         width:100%;
-        /*height: 38px;*/
         font-size:4px;
     }
-    .header-link:active, header-link:visited, header-link:hover{
-        font-size:3px;
+    .header-link:visited{
+        font-size:4px;
+        text-decoration: none;
+    }
+    .header-link:hover{
+        font-size:5px;
+        text-decoration: none;
+    }
+    .header-link:active{
+        font-size:5px;
         text-decoration: none;
     }
 
+}
+
+@media(max-width: 769px){
+    .header-link
+    {
+        border: none;
+        background-color: #44433E;
+        width:100%;
+        font-size:7px;
+    }
+    .header-link:visited{
+        font-size:7px;
+        text-decoration: none;
+    }
+    .header-link:hover{
+        font-size:7px;
+        text-decoration: none;
+    }
+    .header-link:active{
+        font-size:7px;
+        text-decoration: none;
+    }
 }
 #slider{
     margin-top:40px;
@@ -258,7 +288,11 @@
     transition: opacity 500ms ease-in;
 }
 #portfolio{
+    /*height: auto;*/
+}
+.portfolio-photo-container{
     height: auto;
+    width: 100%;
 }
 #portfolio-menu{
     margin-top:40px;
@@ -444,6 +478,99 @@
     margin-left: 3px;
     opacity:0;
 }
+
+/*numbers*/
+#counters{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top:50px;
+}
+
+.dark-light-counters{
+    color: #18cfab;
+    background-color: #1c2a33;
+    border-top: 7px solid #18cfab;
+    text-align: center;
+}
+.dark-light-counters-icon{
+    border: 2px solid #18cfab;
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+    margin: 60px auto 20px auto;
+    color: #18cfab;
+    text-align: center;
+}
+.dark-light-counters-icon i{
+    background-color: #18cfab;
+}
+#counters i{
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-color: #25333c;
+
+}
+#counters .CountUp{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+}
+.dark-light-counters span{
+    color: #18cfab;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.light-dark-counters{
+    border-top: 7px solid #25333c;
+    color: #fff;
+    background-color: #18cfab;
+    text-align: center;
+}
+.light-dark-counters-icon{
+    border: 2px solid #25333c;
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+    margin: 60px auto 20px auto;
+}
+
+.light-dark-counters i {
+    color: #fff;
+    background-color: #25333c;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    vertical-align: baseline;
+}
+.light-dark-counters .CountUp{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+}
+.light-dark-counters span{
+    color: #25333c;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: baseline;
+    margin-bottom: 20px;
+}
+
 #news{
     margin-top:40px;
 }
@@ -479,6 +606,9 @@
     vertical-align: middle;
     font-size: 18px;
     margin-right: 15px;
+}
+.newId-container{
+    margin-top: 50px;
 }
 .feedbackForm input{
     display: block;
@@ -623,4 +753,54 @@
 .errorMessage{
     color: red;
     font: 500 16px Raleway;
+}
+
+footer{
+    background-color: #22353f;
+}
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.footer-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #aeaeae;
+}
+
+.footer-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    background-color: #18cfab;
+    margin: 20px;
+    line-height: 42px;
+}
+
+.footer-btn:hover {
+    background-color: #00cbf6;
+    transition:all 0.5s;
+}
+
+.footer-btn i {
+    color: white;
+    font-size: 35px;
+    vertical-align: middle;
+}
+.footer-container a{
+    color: #18cfab;
 }

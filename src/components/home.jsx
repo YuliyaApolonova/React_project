@@ -11,6 +11,7 @@ import Slider from '../components/slider.jsx'
 import News from '../components/news.jsx'
 import Feedback from '../components/feedback.jsx'
 import Contacts from '../components/contacts.jsx'
+import Counts from '../components/count-up.jsx'
 
 class Home extends React.Component {
    render() {
@@ -44,6 +45,7 @@ class Home extends React.Component {
                <div className="container-fluid">{this.props.children}</div>
                <Portfolio></Portfolio>
                <Team></Team>
+               <Counts></Counts>
                <News></News>
                <Feedback></Feedback>
                <Contacts></Contacts>
