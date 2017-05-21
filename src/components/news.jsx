@@ -1,5 +1,5 @@
 import React from 'react'
-import loadMore from '../actions/newsActions.js'
+//import loadMore from '../actions/newsActions.js'
 var newsActions = require('../actions/newsActions.js');
 var router = require('react-router');
 
@@ -15,7 +15,7 @@ class News extends React.Component {
       this.loadMore = this.loadMore.bind(this);
    }
    loadMore(e) {
-      loadMore();
+      newsActions.loadMore();
       let target = e.target;
       target.remove();
 
