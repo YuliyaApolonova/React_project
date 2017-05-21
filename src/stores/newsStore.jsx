@@ -14,7 +14,7 @@ class NewsStore extends EventEmitter {
       this.news = news.slice(0,8);
    }
    loadMore(){
-      this.news=this.dataStore.slice(0,16);
+      this.news = this.dataStore.slice(0,16);
    }
    getNews() {
       console.log(this.news)

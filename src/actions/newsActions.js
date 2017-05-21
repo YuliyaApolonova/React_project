@@ -13,7 +13,7 @@ export function loadNews() {
    })
 
    // асинхронная обработка события
-   let promise = fetch('data/data.json')
+   let promise = fetch('../../../data.json')
          .then(function(response) {
             return response.json();
          }).then(function(json){

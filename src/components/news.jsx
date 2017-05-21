@@ -1,6 +1,6 @@
 import React from 'react'
-import loadMore from '../actions/newsActions.jsx'
-import newsActions from '../actions/newsActions.jsx'
+import loadMore from '../actions/newsActions.js'
+var newsActions = require('../actions/newsActions.js');
 var router = require('react-router');
 
 var Link = router.Link;
@@ -41,7 +41,7 @@ class News extends React.Component {
             <div id="news">
                <div className="container">
                   <div className="newsTitle">
-                     <h1>Breaking News</h1>
+                     <h1 className="caption">Breaking News</h1>
                      <hr className="hr1" />
                      <hr className="hr2" />
                   </div>
@@ -55,7 +55,7 @@ class News extends React.Component {
                               <div key={index} className="col-xs-12 col-sm-6 col-md-3 new-content">
                                  <Link to={{ pathname: `/new/${item.id}`, query: { date:item.date, text:item.text } }} >
                                     <div className="new-item-photo">
-                                       <img src="src/images/news.jpg" />
+                                       <img className='news-image' src="src/images/news.jpg" />
                                        <span className="new-date">{dateArr[1]} {monthNew}</span>
                                     </div>
                                     <h3 className="new-item-title">Amazing Image Post</h3>

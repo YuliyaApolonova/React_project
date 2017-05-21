@@ -5,7 +5,7 @@ class Slider extends React.Component{
    render(){
       return(
             <div id="slider">
-            <Carousel interval="3000">
+            <Carousel interval={3000}>
                <Carousel.Item className="carousel">
                   <img width={1600} height={500} alt="900x500" src="src/images/slide1.jpg"/>
                   <Carousel.Caption>

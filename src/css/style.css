@@ -92,6 +92,28 @@
     left:0px;
     top:100px;
 }
+@media(max-width: 321px){
+    .carousel-caption{
+        position: absolute;
+        left:0px;
+        top:0px;
+    }
+    .carousel h2{
+        color: white;
+        font: 400 15px Raleway;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .carousel h3{
+        color: #00e1ff;
+        font: 300 10px Raleway;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .carousel p{
+        font: 200 8px Raleway;
+    }
+}
 #options
 {
     width:100%;
@@ -422,4 +444,181 @@
     margin-left: 3px;
     opacity:0;
 }
+#news{
+    margin-top:40px;
+}
+.news-image{
+    width: 100%;
+    height: auto;
+}
+.new-content{
+    margin-top:40px;
+}
+.news-btn-container {
+    text-align: center;
+}
+.news-loadMore-btn {
+    margin-top: 40px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #18cfab;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 -5px 0 0 #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.news-loadMore-btn i {
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.feedbackForm input{
+    display: block;
+    border: 1px solid #efeff1;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #4e4e4e;
+    padding: 15px;
+    height: 10vh;
+}
+.feedbackForm textarea{
+    display: block;
+    border: 1px solid #efeff1;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #4e4e4e;
+    padding: 15px;
+    height: 20vh;
+}
 
+/*Feedback*/
+
+#feedback{
+    width:100%;
+    background-color: #f8fcfe;
+}
+.feedbackHeader{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feedbackInner{
+    width: auto;
+    padding: 30px;
+    border: 3px solid #c2c2c2;
+    background-color: #ffffff;
+    min-height: 500px;
+    margin-top:50px;
+    margin-left:40px;
+    margin-right:40px;
+}
+.feedbackMessage{
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #c2c2c2;
+
+}
+.feedbackMessage h3{
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #4e4e4e;
+    background-color: #f7f7f7;
+}
+.feedbackMessage span{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.feedbackMessage p{
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.feedbackAddBtn{
+    padding: 20px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #18cfab;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 -5px 0 0 #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+    line-height: 18px;
+}
+.feedbackAddBtn i{
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+#contacts
+{
+    width:100%;
+}
+.contacts-form input
+{
+    height:40px;
+    font-size: 16px;
+    width: 100%;
+    font-family: Montserrat;
+    border: 1px solid lightgrey;
+
+}
+.contacts-form textarea
+{
+
+    width: 100%;
+    height:200px;
+    border: 1px solid lightgrey;
+
+}
+
+.contacts-form button
+{
+    width: 100%;
+    height: 50px;
+    background-color: #18cfab;
+    border-radius: 5px;
+    color: #ffffff;
+    font: 700 14px / 16px Montserrat;: #18cfab;
+    margin-top: 0;
+}
+#contacts h1
+{
+    text-align: left;
+    color: #4e4e4e;
+    font: 400 36px / 40px Montserrat;
+    text-align: left;
+
+}
+
+#div-hr
+{
+    width:15%;
+    
+
+}
