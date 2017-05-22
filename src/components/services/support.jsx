@@ -7,7 +7,7 @@ class Support extends React.Component{
                <div className="container-fluid">
                   <div className="row">
                      <div className=" col-lg-2  col-md-2 col-sm-4 col-xs-12">
-                        <img  className='service-img' src="../src/images/suport.jpg"/>
+                        <img  className='service-img' src="src/images/suport.jpg"/>
                      </div>
                      <div className="col-lg-10 col-md-10 col-xs-12 col-sm-8">
                         <p>

@@ -24,10 +24,10 @@ class Team extends React.Component{
                                           <p className="team-p2">Web-designer</p>
                                        </div>
                                        <div className="networks">
-                                          <div className="network1"><img className="network-img" src="../src/images/social-hover-icon1.png"/> </div>
-                                          <div className="network2"><img className="network-img" src="../src/images/social-hover-icon2.png"/></div>
-                                          <div className="network3"><img className="network-img" src="../src/images/social-hover-icon3.png"/></div>
-                                          <div className="network4"><img className="network-img" src="../src/images/social-hover-icon4.png"/></div>
+                                          <div className="network1"><img className="network-img" src="src/images/social-hover-icon1.png"/> </div>
+                                          <div className="network2"><img className="network-img" src="src/images/social-hover-icon2.png"/></div>
+                                          <div className="network3"><img className="network-img" src="src/images/social-hover-icon3.png"/></div>
+                                          <div className="network4"><img className="network-img" src="src/images/social-hover-icon4.png"/></div>
                                        </div>
                                     </div>)
                            })}
