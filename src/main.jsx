@@ -65,7 +65,7 @@ class App extends React.Component{
                               <div className="row">
 
                                  <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="slider"  spy={true} smooth={true} offset={-50} duration={500} className="header-link">Home</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="about" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >About</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="about" spy={true} smooth={true} offset={-30} duration={500} className="header-link" >About</ScrollLink></div></div>
 
                                  <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="service" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >Service</ScrollLink></div></div>
                                  <div className="col-lg-1 col-md-1 col-sm-1 col-xs-2"><div className="nav-content"><ScrollLink to="feedback" spy={true} smooth={true} offset={-40} duration={500} className="header-link" >Feedback</ScrollLink></div></div>

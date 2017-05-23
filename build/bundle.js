@@ -25179,7 +25179,7 @@ var App = function (_React$Component2) {
                                     { className: 'nav-content' },
                                     _react2.default.createElement(
                                        ScrollLink,
-                                       { to: '', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                                       { to: 'about', spy: true, smooth: true, offset: -30, duration: 500, className: 'header-link' },
                                        'About'
                                     )
                                  )
