@@ -5,13 +5,14 @@ var Link = router.Link;
 
 import Options from '../components/options.jsx'
 import Portfolio from '../components/portfolio.jsx'
-// import Numbers from '../components/numbers.jsx'
+
 import Team from '../components/team.jsx'
 import Slider from '../components/slider.jsx'
 import News from '../components/news.jsx'
 import Feedback from '../components/feedback.jsx'
 import Contacts from '../components/contacts.jsx'
 import Counts from '../components/count-up.jsx'
+import About from '../components/about.jsx'
 
 class Home extends React.Component {
    render() {
@@ -43,6 +44,7 @@ class Home extends React.Component {
                   </div>
                </div>
                <div className="container-fluid">{this.props.children}</div>
+               <About></About>
                <Portfolio></Portfolio>
                <Team></Team>
                <Counts></Counts>

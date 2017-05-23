@@ -9,27 +9,22 @@ class Counts extends React.Component{
    constructor(){
       super()
       this.state={
-         // isScroll: false,
          isAnimatedRecently: false
       }
       this.scrollHandler = this.scrollHandler.bind(this);
    }
-   scrollHandler(){ //не срабатывает
-      //console.log('fgf');
+   scrollHandler(){
       var counters = document.getElementById('counters');
       var countersCoords = counters.getBoundingClientRect();
       var isVisibleTop = countersCoords.top > 0 && countersCoords.top < document.documentElement.clientHeight;
       var isVisibleBottom = countersCoords.bottom < document.documentElement.clientHeight && countersCoords.bottom > 0;
       if ((isVisibleTop || isVisibleBottom) && !this.state.isAnimatedRecently){
-         // this.setState({isScroll: true});
+
 
          console.log('visible');//работает;
 
          counterAction.animate(this.Works, this.Customers, this.Purchase, this.Office);
-         // startAnimation(this.Works);
-         // startAnimation(this.Customers);
-         // startAnimation(this.Purchase);
-         // startAnimation(this.Office);
+
 
          this.setState({isAnimatedRecently: true});
 

@@ -44,6 +44,7 @@
     font: 300 11px Raleway;
     font-weight: 300;
     text-decoration: none;
+
 }
 .nav-content{
     text-align:center;
@@ -54,14 +55,13 @@
         width: 100%;
         height: auto;
         margin-left: 0;
-
     }
     .header-link
     {
         border: none;
         background-color: #44433E;
         width:100%;
-        font-size:4px;
+        font-size:3px;
     }
     .header-link:visited{
         font-size:4px;
@@ -275,17 +275,39 @@
     text-align: center;
     color: white;
 }
-.skills-block{
+
+#skills-block1{
+    width: 0px;
     height: 30px;
+    background-color: red;
+}
+#skills-block2{
     background-color: #00e1ff;
+    width: 0px;
+    height: 30px;
+}
+#skills-block3{
+    background: lawngreen;
+    width: 0px;
+    height: 30px;
+}
+#skills-block4{
+    background: deeppink;
+    width: 0px;
+    height: 30px;
+}
+#skills-block5{
+    background: yellow;
+    width: 0px;
+    height: 30px;
 }
 .example-appear {
-    opacity: 0.01;
+    opacity: 0.04;
 }
 
 .example-appear.example-appear-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transition: opacity 3000ms ease-in;
 }
 #portfolio{
     /*height: auto;*/
@@ -483,7 +505,6 @@
 #counters{
     width: 100%;
     display: inline-block;
-    margin: 0;
     padding: 0;
     border: 0;
     margin-top:50px;

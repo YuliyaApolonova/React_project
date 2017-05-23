@@ -64,16 +64,16 @@ class App extends React.Component{
                            <div className="container-fluid">
                               <div className="row">
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="slider"  spy={true} smooth={true} offset={-50} duration={500} className="header-link">HOME</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >ABOUT</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="slider"  spy={true} smooth={true} offset={-50} duration={500} className="header-link">Home</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >About</ScrollLink></div></div>
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="service" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >SERVICE</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="feedback" spy={true} smooth={true} offset={-40} duration={500} className="header-link" >FEEDBACK</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="portfolio" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >PORTFOLIO</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="service" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >Service</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-2"><div className="nav-content"><ScrollLink to="feedback" spy={true} smooth={true} offset={-40} duration={500} className="header-link" >Feedback</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="portfolio" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >Work</ScrollLink></div></div>
 
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="news" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >NEWS</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="team" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >TEAM</ScrollLink></div></div>
-                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="contacts" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >CONTACTS</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="news" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >News</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="team" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >Team</ScrollLink></div></div>
+                                 <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1"><div className="nav-content"><ScrollLink to="contacts" spy={true} smooth={true} offset={-50} duration={500} className="header-link" >Contacts</ScrollLink></div></div>
                               </div>
                            </div>
                         </div>
