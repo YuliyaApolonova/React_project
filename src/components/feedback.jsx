@@ -15,11 +15,18 @@ class Feedback extends React.Component{
       this.setState({loaded: true});
       var form = document.forms.feedbackForm;
       var elems = form.elements;
-      var newComment = {};
-      newComment.title= elems.title.value;
-      newComment.msg = elems.message.value;
-      feedbackActions.createComment(newComment);
-
+      if(elems.title.value == ''){
+         alert('Input title of yor message!');
+      }
+      else if(elems.message.value == ''){
+         alert('Input your message!');
+      }
+      else{
+         var newComment = {};
+         newComment.title= elems.title.value;
+         newComment.msg = elems.message.value;
+         feedbackActions.createComment(newComment);
+      }
    }
    removeComment(e){
       var title = e.target.dataset.title;
