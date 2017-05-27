@@ -16,10 +16,10 @@ class About extends React.Component{
       this.scrollHandler = this.scrollHandler.bind(this);
    }
    scrollHandler(){
-      var counters = document.getElementById('about');
-      var countersCoords = counters.getBoundingClientRect();
-      var isVisibleTop = countersCoords.top > 0 && countersCoords.top < document.documentElement.clientHeight;
-      var isVisibleBottom = countersCoords.bottom < document.documentElement.clientHeight && countersCoords.bottom > 0;
+      var about = document.getElementById('about');
+      var aboutCoords = about.getBoundingClientRect();
+      var isVisibleTop = aboutCoords.top > 0 && aboutCoords.top < document.documentElement.clientHeight;
+      var isVisibleBottom = aboutCoords.bottom < document.documentElement.clientHeight && aboutCoords.bottom > 0;
       if ((isVisibleTop || isVisibleBottom) && !this.state.isAnimatedRecently){
 
          aboutActions.animate();
@@ -39,27 +39,29 @@ class About extends React.Component{
       return(
             <div id="about">
                <div id="about-wrapper">
-               <div id="about-container" className="container-fluid">
-                     <div className="col-lg-6 col-md-6 hidden-sm hidden-xs" id="about-photo"></div>
-                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div id="about-container" className="container">
+                     <div className=" col-lg-6 col-md-6 hidden-sm hidden-xs" id="about-photo"></div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     <div className="row">
                         <h1>About our company</h1>
                         <hr className="hr1"/>
                         <hr className="hr2"/>
-                        <div className="row">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4"><Link to="/about/History" > OUR HISTORY</Link></div>
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4"><Link to="/about/Biography" > OUR BIOGRAPHY</Link></div>
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4"><Link to="/about/Skills" > OUR SKILLS</Link></div>
+                        <div className="skills-block">
+                        <div className="skills-link"><Link to="/about/History" > OUR HISTORY</Link></div>
+                        <div className="skills-link"><Link to="/about/Biography" > OUR BIOGRAPHY</Link></div>
+                        <div className="skills-link"><Link to="/about/Skills" > OUR SKILLS</Link></div>
                         </div>
-                        <div className="container">
+
+                        <div id="diagram-container">
                         <div className="row">
-                        <div className=" skills-block" id="skills-block1"></div>
+                        <div className="skills-block" id="skills-block1"></div>
                         </div>
                         <div className="row">
                         <div className="skills-block" id="skills-block2"></div>
                         </div>
-                        <div className="row">
+                           <div className="row">
                         <div className=" skills-block" id="skills-block3"></div>
-                        </div>
+                           </div>
                         <div className="row">
                         <div className="skills-block" id="skills-block4"></div>
                         </div>
@@ -68,7 +70,7 @@ class About extends React.Component{
                         </div>
                         </div>
                      </div>
-                     <div className="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                  </div>
                </div>
                </div>
             </div>

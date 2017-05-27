@@ -23669,10 +23669,10 @@ var About = function (_React$Component) {
    _createClass(About, [{
       key: 'scrollHandler',
       value: function scrollHandler() {
-         var counters = document.getElementById('about');
-         var countersCoords = counters.getBoundingClientRect();
-         var isVisibleTop = countersCoords.top > 0 && countersCoords.top < document.documentElement.clientHeight;
-         var isVisibleBottom = countersCoords.bottom < document.documentElement.clientHeight && countersCoords.bottom > 0;
+         var about = document.getElementById('about');
+         var aboutCoords = about.getBoundingClientRect();
+         var isVisibleTop = aboutCoords.top > 0 && aboutCoords.top < document.documentElement.clientHeight;
+         var isVisibleBottom = aboutCoords.bottom < document.documentElement.clientHeight && aboutCoords.bottom > 0;
          if ((isVisibleTop || isVisibleBottom) && !this.state.isAnimatedRecently) {
 
             aboutActions.animate();
@@ -23700,80 +23700,83 @@ var About = function (_React$Component) {
                { id: 'about-wrapper' },
                _react2.default.createElement(
                   'div',
-                  { id: 'about-container', className: 'container-fluid' },
-                  _react2.default.createElement('div', { className: 'col-lg-6 col-md-6 hidden-sm hidden-xs', id: 'about-photo' }),
+                  { id: 'about-container', className: 'container' },
+                  _react2.default.createElement('div', { className: ' col-lg-6 col-md-6 hidden-sm hidden-xs', id: 'about-photo' }),
                   _react2.default.createElement(
                      'div',
-                     { className: 'col-lg-4 col-md-4 col-sm-12 col-xs-12' },
-                     _react2.default.createElement(
-                        'h1',
-                        null,
-                        'About our company'
-                     ),
-                     _react2.default.createElement('hr', { className: 'hr1' }),
-                     _react2.default.createElement('hr', { className: 'hr2' }),
+                     { className: 'col-lg-6 col-md-6 col-sm-12 col-xs-12' },
                      _react2.default.createElement(
                         'div',
                         { className: 'row' },
                         _react2.default.createElement(
+                           'h1',
+                           null,
+                           'About our company'
+                        ),
+                        _react2.default.createElement('hr', { className: 'hr1' }),
+                        _react2.default.createElement('hr', { className: 'hr2' }),
+                        _react2.default.createElement(
                            'div',
-                           { className: 'col-lg-4 col-md-4 col-sm-4 col-xs-4' },
+                           { className: 'skills-block' },
                            _react2.default.createElement(
-                              Link,
-                              { to: '/about/History' },
-                              ' OUR HISTORY'
+                              'div',
+                              { className: 'skills-link' },
+                              _react2.default.createElement(
+                                 Link,
+                                 { to: '/about/History' },
+                                 ' OUR HISTORY'
+                              )
+                           ),
+                           _react2.default.createElement(
+                              'div',
+                              { className: 'skills-link' },
+                              _react2.default.createElement(
+                                 Link,
+                                 { to: '/about/Biography' },
+                                 ' OUR BIOGRAPHY'
+                              )
+                           ),
+                           _react2.default.createElement(
+                              'div',
+                              { className: 'skills-link' },
+                              _react2.default.createElement(
+                                 Link,
+                                 { to: '/about/Skills' },
+                                 ' OUR SKILLS'
+                              )
                            )
                         ),
                         _react2.default.createElement(
                            'div',
-                           { className: 'col-lg-4 col-md-4 col-sm-4 col-xs-4' },
+                           { id: 'diagram-container' },
                            _react2.default.createElement(
-                              Link,
-                              { to: '/about/Biography' },
-                              ' OUR BIOGRAPHY'
-                           )
-                        ),
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'col-lg-4 col-md-4 col-sm-4 col-xs-4' },
+                              'div',
+                              { className: 'row' },
+                              _react2.default.createElement('div', { className: 'skills-block', id: 'skills-block1' })
+                           ),
                            _react2.default.createElement(
-                              Link,
-                              { to: '/about/Skills' },
-                              ' OUR SKILLS'
+                              'div',
+                              { className: 'row' },
+                              _react2.default.createElement('div', { className: 'skills-block', id: 'skills-block2' })
+                           ),
+                           _react2.default.createElement(
+                              'div',
+                              { className: 'row' },
+                              _react2.default.createElement('div', { className: ' skills-block', id: 'skills-block3' })
+                           ),
+                           _react2.default.createElement(
+                              'div',
+                              { className: 'row' },
+                              _react2.default.createElement('div', { className: 'skills-block', id: 'skills-block4' })
+                           ),
+                           _react2.default.createElement(
+                              'div',
+                              { className: 'row' },
+                              _react2.default.createElement('div', { className: ' skills-block', id: 'skills-block5' })
                            )
-                        )
-                     ),
-                     _react2.default.createElement(
-                        'div',
-                        { className: 'container' },
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'row' },
-                           _react2.default.createElement('div', { className: ' skills-block', id: 'skills-block1' })
-                        ),
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'row' },
-                           _react2.default.createElement('div', { className: 'skills-block', id: 'skills-block2' })
-                        ),
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'row' },
-                           _react2.default.createElement('div', { className: ' skills-block', id: 'skills-block3' })
-                        ),
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'row' },
-                           _react2.default.createElement('div', { className: 'skills-block', id: 'skills-block4' })
-                        ),
-                        _react2.default.createElement(
-                           'div',
-                           { className: 'row' },
-                           _react2.default.createElement('div', { className: ' skills-block', id: 'skills-block5' })
                         )
                      )
-                  ),
-                  _react2.default.createElement('div', { className: 'col-lg-2 col-md-2 hidden-sm hidden-xs' })
+                  )
                )
             )
          );
@@ -24049,82 +24052,86 @@ var Counts = function (_React$Component) {
             { id: 'counters' },
             _react2.default.createElement(
                'div',
-               { className: 'row' },
+               { className: 'container-fluid' },
                _react2.default.createElement(
                   'div',
-                  { className: 'dark-light-counters col-md-3 col-sm-6 col-xs-12' },
+                  { className: 'row' },
                   _react2.default.createElement(
                      'div',
-                     { className: 'dark-light-counters-icon' },
-                     _react2.default.createElement('i', { className: 'fa fa-briefcase fa-2x', 'aria-hidden': 'true' })
+                     { className: 'dark-light-counters col-md-3 col-sm-6 col-xs-12' },
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'dark-light-counters-icon' },
+                        _react2.default.createElement('i', { className: 'fa fa-briefcase fa-2x', 'aria-hidden': 'true' })
+                     ),
+                     _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 4609, duration: 3, ref: function ref(Works) {
+                           _this2.Works = Works;
+                        } }),
+                     _react2.default.createElement('br', null),
+                     _react2.default.createElement(
+                        'span',
+                        null,
+                        'Works'
+                     ),
+                     _react2.default.createElement('br', null)
                   ),
-                  _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 4609, duration: 3, ref: function ref(Works) {
-                        _this2.Works = Works;
-                     } }),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                     'span',
-                     null,
-                     'Works'
-                  ),
-                  _react2.default.createElement('br', null)
-               ),
-               _react2.default.createElement(
-                  'div',
-                  { className: 'light-dark-counters col-md-3 col-sm-6 col-xs-12' },
-                  _react2.default.createElement(
-                     'div',
-                     { className: 'light-dark-counters-icon' },
-                     _react2.default.createElement('i', { className: 'fa fa-user fa-2x', 'aria-hidden': 'true' })
-                  ),
-                  _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 3470, duration: 3, ref: function ref(Customers) {
-                        _this2.Customers = Customers;
-                     } }),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                     'span',
-                     null,
-                     'Customers'
-                  ),
-                  _react2.default.createElement('br', null)
-               ),
-               _react2.default.createElement(
-                  'div',
-                  { className: 'dark-light-counters col-md-3 col-sm-6 col-xs-12' },
                   _react2.default.createElement(
                      'div',
-                     { className: 'dark-light-counters-icon' },
-                     _react2.default.createElement('i', { className: 'fa fa-shopping-cart fa-2x', 'aria-hidden': 'true' })
+                     { className: 'light-dark-counters col-md-3 col-sm-6 col-xs-12' },
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'light-dark-counters-icon' },
+                        _react2.default.createElement('i', { className: 'fa fa-user fa-2x', 'aria-hidden': 'true' })
+                     ),
+                     _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 3470, duration: 3, ref: function ref(Customers) {
+                           _this2.Customers = Customers;
+                        } }),
+                     _react2.default.createElement('br', null),
+                     _react2.default.createElement(
+                        'span',
+                        null,
+                        'Customers'
+                     ),
+                     _react2.default.createElement('br', null)
                   ),
-                  _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 2908, duration: 3, ref: function ref(Purchase) {
-                        _this2.Purchase = Purchase;
-                     } }),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                     'span',
-                     null,
-                     'Purchase'
-                  ),
-                  _react2.default.createElement('br', null)
-               ),
-               _react2.default.createElement(
-                  'div',
-                  { className: 'light-dark-counters col-md-3 col-sm-6 col-xs-12' },
                   _react2.default.createElement(
                      'div',
-                     { className: 'light-dark-counters-icon' },
-                     _react2.default.createElement('i', { className: 'fa fa-map-marker fa-2x', 'aria-hidden': 'true' })
+                     { className: 'dark-light-counters col-md-3 col-sm-6 col-xs-12' },
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'dark-light-counters-icon' },
+                        _react2.default.createElement('i', { className: 'fa fa-shopping-cart fa-2x', 'aria-hidden': 'true' })
+                     ),
+                     _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 2908, duration: 3, ref: function ref(Purchase) {
+                           _this2.Purchase = Purchase;
+                        } }),
+                     _react2.default.createElement('br', null),
+                     _react2.default.createElement(
+                        'span',
+                        null,
+                        'Purchase'
+                     ),
+                     _react2.default.createElement('br', null)
                   ),
-                  _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 1908, duration: 3, ref: function ref(Office) {
-                        _this2.Office = Office;
-                     } }),
-                  _react2.default.createElement('br', null),
                   _react2.default.createElement(
-                     'span',
-                     null,
-                     'Office'
-                  ),
-                  _react2.default.createElement('br', null)
+                     'div',
+                     { className: 'light-dark-counters col-md-3 col-sm-6 col-xs-12' },
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'light-dark-counters-icon' },
+                        _react2.default.createElement('i', { className: 'fa fa-map-marker fa-2x', 'aria-hidden': 'true' })
+                     ),
+                     _react2.default.createElement(_reactCountup2.default, { className: 'CountUp', start: 0, end: 1908, duration: 3, ref: function ref(Office) {
+                           _this2.Office = Office;
+                        } }),
+                     _react2.default.createElement('br', null),
+                     _react2.default.createElement(
+                        'span',
+                        null,
+                        'Office'
+                     ),
+                     _react2.default.createElement('br', null)
+                  )
                )
             )
          );
@@ -24190,10 +24197,16 @@ var Feedback = function (_React$Component) {
          this.setState({ loaded: true });
          var form = document.forms.feedbackForm;
          var elems = form.elements;
-         var newComment = {};
-         newComment.title = elems.title.value;
-         newComment.msg = elems.message.value;
-         feedbackActions.createComment(newComment);
+         if (elems.title.value == '') {
+            alert('Input title of yor message!');
+         } else if (elems.message.value == '') {
+            alert('Input your message!');
+         } else {
+            var newComment = {};
+            newComment.title = elems.title.value;
+            newComment.msg = elems.message.value;
+            feedbackActions.createComment(newComment);
+         }
       }
    }, {
       key: 'removeComment',
@@ -25140,7 +25153,7 @@ var App = function (_React$Component2) {
                { id: 'header' },
                _react2.default.createElement(
                   'div',
-                  { className: 'container-fluid' },
+                  { className: 'container' },
                   _react2.default.createElement(
                      'div',
                      { className: 'row' },
@@ -25151,117 +25164,105 @@ var App = function (_React$Component2) {
                      ),
                      _react2.default.createElement(
                         'div',
-                        { className: 'col-md-9 col-sm-9 col-sm-9 col-xs-12' },
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
                         _react2.default.createElement(
                            'div',
-                           { className: 'container-fluid' },
+                           { className: 'nav-content' },
                            _react2.default.createElement(
-                              'div',
-                              { className: 'row' },
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'slider', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'Home'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'about', spy: true, smooth: true, offset: -30, duration: 500, className: 'header-link' },
-                                       'About'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'service', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'Service'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-2' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'feedback', spy: true, smooth: true, offset: -40, duration: 500, className: 'header-link' },
-                                       'Feedback'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'portfolio', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'Work'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'news', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'News'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'team', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'Team'
-                                    )
-                                 )
-                              ),
-                              _react2.default.createElement(
-                                 'div',
-                                 { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
-                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'nav-content' },
-                                    _react2.default.createElement(
-                                       ScrollLink,
-                                       { to: 'contacts', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
-                                       'Contacts'
-                                    )
-                                 )
-                              )
+                              ScrollLink,
+                              { to: 'slider', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'Home'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'about', spy: true, smooth: true, offset: -30, duration: 500, className: 'header-link' },
+                              'About'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'service', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'Service'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-2' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'feedback', spy: true, smooth: true, offset: -40, duration: 500, className: 'header-link' },
+                              'Feedback'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'portfolio', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'Work'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'news', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'News'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'team', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'Team'
+                           )
+                        )
+                     ),
+                     _react2.default.createElement(
+                        'div',
+                        { className: 'col-lg-1 col-md-1 col-sm-1 col-xs-1' },
+                        _react2.default.createElement(
+                           'div',
+                           { className: 'nav-content' },
+                           _react2.default.createElement(
+                              ScrollLink,
+                              { to: 'contacts', spy: true, smooth: true, offset: -50, duration: 500, className: 'header-link' },
+                              'Contacts'
                            )
                         )
                      )

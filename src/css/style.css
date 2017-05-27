@@ -22,6 +22,7 @@
     height: 38px;
     color:white;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .header-link:active
 {
@@ -62,6 +63,11 @@
         background-color: #44433E;
         width:100%;
         font-size:3px;
+        text-transform: lowercase;
+    }
+    .header-link:active{
+        font-size:5px;
+        text-decoration: none;
     }
     .header-link:visited{
         font-size:4px;
@@ -71,10 +77,7 @@
         font-size:5px;
         text-decoration: none;
     }
-    .header-link:active{
-        font-size:5px;
-        text-decoration: none;
-    }
+
 
 }
 
@@ -269,13 +272,40 @@
 #about-photo{
     background-color: #B3B3B3;
     height: 100%;
+    width: 50%;
+    float: left;
+}
+.skills-link{
+    float: left;
+    width: 33.333%;
+}
+
+.skills-block{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+@media(max-width:322px){
+    .skills-link{
+        font-size: 10px;
+    }
+    .skills-block{
+        margin-left: 10px;
+    }
+}
+#diagram-container{
+    margin-top: 40px;
 }
 #about h1{
     font: 400 36px / 40px Montserrat;
     text-align: center;
     color: white;
 }
-
+.about-link{
+    float: left;
+    font: 12px Montserrat;
+    text-color: white;
+    margin-right: 5px;
+}
 #skills-block1{
     width: 0px;
     height: 30px;

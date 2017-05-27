@@ -42,6 +42,7 @@ class Counts extends React.Component{
    render(){
       return(
             <div id='counters'>
+               <div className="container-fluid">
                <div className="row">
                   <div className='dark-light-counters col-md-3 col-sm-6 col-xs-12'>
                      <div className='dark-light-counters-icon'>
@@ -87,6 +88,7 @@ class Counts extends React.Component{
                      <span>Office</span>
                      <br/>
                   </div>
+               </div>
                </div>
             </div>
       )
